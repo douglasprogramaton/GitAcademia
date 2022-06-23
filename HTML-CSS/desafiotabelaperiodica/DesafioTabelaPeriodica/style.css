@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+body{
+    
+    font:1em/1 'Montserrat', sans-serif;
+	color:rgb(255, 255, 255);
+	text-align:center;
+	padding:7em 5%;
+    background-color: white;
+    
+}
+h1{
+    color: black;
+    margin:.5em 0;
+	font-size:calc(3vw + 2rem);
+	font-weight:100;
+	text-transform:uppercase;
+	letter-spacing:-.05em;
+}
+h2{
+	font-size:1em;
+   
+}
+
+
+main{
+	margin: 40px;;
+	width: 70px;;
+	display:flex;
+    
+    
+}
+
+
+footer{
+    font-size:2em;
+    width:auto;
+    margin: 7px;
+    font: 1em/1 sans-serif;
+}
+table tr,td{
+    
+    padding: 5px 5px ;
+    
+}
+.existe{
+    height: 45px;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color:rgba(71, 67, 67, 0.945)
+
+    
+}
+.grenn{
+    background-color: greenyellow;
+    border-radius: 4px;
+}
+.grenn:hover{
+background-color: rgb(255, 166, 0);
+}
+.orange{
+    background-color: orange;
+    border-radius: 4px;
+}
+.orange:hover{
+background-color: greenyellow;
+}
+.yellow{
+    background-color: yellow;
+    border-radius: 4px;
+}
+.yellow:hover{
+    background-color: rgb(166, 12, 166);
+}
+
+.purple{
+    background-color: rgb(166, 12, 166);
+    border-radius: 4px;
+}
+.purple:hover{
+    background-color: yellow;
+}
+.greenwater{
+  background-color: aqua;
+  border-radius: 4px;
+}
+.greenwater:hover{
+    background-color: rgb(63, 144, 232);
+}
+.blue{
+    background-color: rgb(63, 144, 232);
+    border-radius: 4px;
+}
+.blue:hover{
+    background-color:aqua;
+}
+.black{
+    background-color: rgb(54, 49, 49);
+    width: 40px;
+    height: 40px;
+}
+.bras{
+    color: #000;
+    
+}
+ol{
+    height: 70px;
+}
+h3{
+    color: #000;
+    height: 120px;
+}
