@@ -1,0 +1,275 @@
+/*esse link """@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');"""
+Eu peguei na google font para usar com fonte no desafio do professor Daiverson*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+   /* Coloquei a sans-serif porque caso o navegador não interplete a font inter*/
+   font-family: 'Inter',sans-serif;
+
+}
+body{
+    /*coloquei 100% para ter a largura completa da tela e 100vh também para ter a altura da tela toda */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(94, 136, 235);
+}
+.container{
+   width: 80%; 
+   height: 85vh;
+   display: flex;
+   box-shadow: 5px 5px 10px rgb(0, 0, 0);
+
+}
+.form-imagem{
+width: 50%;
+display:flex;
+justify-content: center;
+align-items: center;
+background-color:rgb(219, 191, 154) ;
+padding: 1rem;
+}
+.form-imagem img{
+    width: 21rem;
+
+}
+
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem;
+}
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.login-button{
+    display: flex;
+    align-items: center;
+}
+.login-button button {
+    border: none;
+    background-color:rgb(94, 136, 235);
+    padding: 0.4rem 1rem;
+    border-radius:5px;
+    cursor: pointer;
+}/*botão Entre*/
+.login-button button:hover{
+background-color: rgb(99, 108, 221);
+}
+/*botão Entrar*/
+.login-button button a {
+   text-decoration:none;
+   font-weight: 500;
+   color:white;
+}/*para criar o traço em baixo do cadastre-se*/
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: rgb(94, 136, 235);
+    margin:0 auto;
+    position:absolute;
+    border-radius: 10px;
+    font-family: 'Inter',sans-serif;
+}
+/*ajuste dos inputs geral*/
+.input-group{
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+/*ajuste dos inputs separados, determinando os espaços corretos */
+.input-box{
+    display: flex;
+    /*para ficar um  embaixo do outro*/
+    flex-direction: column;
+    /*para ficar com o espaçamento correto*/
+    margin-bottom: 1.1rem;
+    
+
+}
+/**/
+.input-box input {
+    margin: 0.6rem 0 ;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}/*para mecher na cor dentro do input*/
+.input-box input:hover{
+background-color: #eeeeee75;
+}
+/*para mudar a cor da bor do input, para ficar diferente do padão de borda preta.*/
+.input-box input:focus-visible{
+    outline: 1px solid rgb(94, 136, 235)
+}
+/*para muydar os labels e o h6*/
+.input-box label,
+.gender-title h6{
+    
+    font-size: .85rem;
+    font: weight 700;
+    
+    color: #000000c0;
+}
+/*para mudar o texto dentro dos inputs*/
+.input-box input::placeholder{
+    color: #000000be;
+}
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62;
+    padding: 0 0.5rem;
+    
+ 
+}
+.gender-input{
+display:flex;
+align-items:center;
+    }
+/*para dar o espaçamento da bolinha e entra  o gênero*/
+.gender-input input{
+margin-right: 0.1rem;
+}
+.gender-input label{
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.continue-button button{
+    width: 100%;
+    margin-top:2.5rem ;
+    border:none;
+    background-color: rgb(99, 108, 221);
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.continue-button button:hover{
+    background-color: rgb(94, 136, 235);
+}
+.continue-button button a {
+text-decoration: none;
+font-size: 1.5rem;
+font-weight:500 ;
+color: white;
+}
+
+
+.lista-academias.lista-professor{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .55rem 6.2rem; 
+   
+   
+}
+
+.geral{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding: 0.8rem 1.2rem; 
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+
+
+}
+#academias option select{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .55rem 6.2rem; 
+   
+}
+
+.modal {
+    width:35%;
+    height: 90%;
+    background-color: rgb(226, 224, 224);
+    position:absolute;
+    top:10%;
+    height:80% ;
+    display:none;
+    animation: animate;
+    animation-duration: 800ms;
+
+}
+.leia button{
+    width: 100%;
+    margin-top:2.5rem ;
+    border:none;
+    background-color: rgb(99, 108, 221);
+    border-radius: 5px;
+    cursor:pointer;
+}
+.leia button:hover{
+    background-color: rgb(94, 136, 235);
+}
+.leia  button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight:500 ;
+    color: white;
+}
+.fechar{
+    width: 30px;
+    height: 30px;
+  
+    float: right;
+    cursor: pointer;
+}
+
+/*agora para ficar responcivo eu decidi usar uma midia */
+@media screen and (max-width: 1330px){
+    .form-imagem{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .form{
+        width: 100%;
+
+    }
+
+}
+@media screen and (max-width:1064px){
+    .container{
+        width: 90%;
+        height: auto;
+
+    }.input-group{
+        /*para ficar um embaixo do outro*/
+      flex-direction: column;
+      /*para controlar no scroll do mouse*/
+      overflow-y:scroll ;
+      /*para nao quebar e ficar bagunçado*/
+      flex-wrap: nowrap;
+      /*para definir altura*/
+      max-height: 10rem;
+      /*para separar o scroll*/
+      padding-right: 5rem;
+
+    }
+}
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
