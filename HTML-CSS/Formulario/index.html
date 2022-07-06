@@ -14,14 +14,15 @@
             <img src="css-style-JS/img/undraw_receipt_re_fre3.svg" alt="Receipt">
         </div>
         <div class="form"> 
-             <form id="formulario" action="#">
+             <form id="formulario" action="#" onsubmit='valida()'>
+              
                <div class="form-header">
                     <div class="tilte">
                         <h1>Cadastre-se</h1>
                     </div>
 
                    <div class="login-button">
-                    <button> <a href="#">Entrar</a></button>
+                    <button> <a href="tabeladados.html">Entrar</a></button>
                     </div>
 
                 </div>
@@ -32,79 +33,80 @@
                    <label for="Firstname">Primeiro nome</label>
                    <!--""input esta parte esta dizendo que o input vair ser type="text "
                     por que na hora que o usuario clicar no label é diorecionado para o textbox""-->
-                   <input id="firtname" type="text" name="firstname" placeholder="Digite seu primeiro nome " required><!--para tornar o campo obrigatorio-->
+                   <input id="firtname" type="text" name="firstname" placeholder="Digite seu primeiro nome "  ><!--para tornar o campo obrigatorio-->
                   
                    
                  </div>
                
                  <div class="input-box">                  
                    <label for="lastname">Sobrenome</label>
-                   <input id="lastname" type="text" name="lastname" placeholder="Digite seu primeiro sobrenome " required><!--para tornar o campo obrigatorio-->
+                   <input id="lastname" type="text"  name="lastname" placeholder="Digite seu primeiro sobrenome " ><!--para tornar o campo obrigatorio-->
+                   
                  </div>
                  
                  <div class="input-box">
                    <label for="email">Email</label>
-                   <input id="email" type="text" name="email" placeholder="Digite seu email " required><!--para tornar o campo obrigatorio-->
+                   <input id="email" type="text" name="email" placeholder="Digite seu email " ><!--para tornar o campo obrigatorio-->
                  </div>
                  <div class="input-box">
                    <label for="login">Login</label>
-                   <input id="login" type="text" name="login" placeholder="Este é seu login " required><!--para tornar o campo obrigatorio-->
+                   <input id="login" type="text" name="login" placeholder="Este é seu login " ><!--para tornar o campo obrigatorio-->
                  </div>
 
                  <div class="input-box">
                     <label for="GitHub">Perfil do GitHub</label>
-                    <input id="GitHub" type="text" name="gitHub" placeholder="Perfil do GitHub " required><!--para tornar o campo obrigatorio-->
+                    <input id="GitHub" type="text" name="gitHub" placeholder="Perfil do GitHub " ><!--para tornar o campo obrigatorio-->
                   </div>
 
                  <div class="input-box">
                    <label for="number">Celular</label>
-                   <input id="number" type="text" name="number" placeholder="(xx)xxxxx-xxxx" required>  <!--para tornar o campo obrigatorio--> 
+                   <input id="number" type="text" name="number" placeholder="(xx)xxxxx-xxxx" >  <!--para tornar o campo obrigatorio--> 
                  </div>
 
                  <div class="input-box">   
                     <label for="CEP">CEP</label>
-                      <input id="CEP" type="text" name="CEP" placeholder="Digite seu cep " required><!--para tornar o campo obrigatorio-->
+                      <input id="CEP" type="text" name="CEP" placeholder="Digite seu cep " ><!--para tornar o campo obrigatorio-->
                 </div> 
 
                   <div class="input-box">   
                     <label for="address">Endereço</label> 
-                    <input id="address" type="text" name="address" placeholder="Digite seu Endereço " required><!--para tornar o campo obrigatorio-->
+                    <input id="address" type="text" name="address" placeholder="Digite seu Endereço " ><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="n-casa">Numero da casa</label> 
-                    <input id="n-casa" type="text" name="n-casa" placeholder="Numero da casa " required><!--para tornar o campo obrigatorio-->
+                    <input id="n-casa" type="text" name="n-casa" placeholder="Numero da casa " ><!--para tornar o campo obrigatorio-->
                   </div> 
 
                   <div class="input-box">   
                     <label for="complement">Complemento</label>
-                    <input id="complement" type="text" name="complement" placeholder="Complemento " required><!--para tornar o campo obrigatorio-->
+                    <input id="complement" type="text" name="complement" placeholder="Complemento " ><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="district">Bairro</label>
-                    <input id="district" type="text" name="district" placeholder="Bairro" required><!--para tornar o campo obrigatorio-->
+                    <input id="district" type="text" name="district" placeholder="Bairro" ><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="City">Cidade</label>
-                    <input id="City" type="text" name="City" placeholder="Cidade " required><!--para tornar o campo obrigatorio-->
+                    <input id="City" type="text" name="City" placeholder="Cidade " ><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="state">Estado</label>
-                    <input id="state" type="text" name="state" placeholder="Estado " required><!--para tornar o campo obrigatorio-->
+                    <input id="state" type="text" name="state" placeholder="Estado " ><!--para tornar o campo obrigatorio-->
                   </div> 
 
                  <div class="input-box">   
                    <label for="password">Senha</label>
-                   <input id="password" type="password" name="password" placeholder="Digite sua senha " required><!--para tornar o campo obrigatorio-->
+                   <input id="password" type="password" name="password" placeholder="Digite sua senha " ><!--para tornar o campo obrigatorio-->
                  </div> 
 
                  <div class="input-box">   
                     <label for="Confirpassword">Confirme sua senha</label>
   
-                    <input id="Confirpassword" type="password" name="Confirpassword" placeholder="Confirme sua senha " required><!--para tornar o campo obrigatorio-->
+                    <input id="Confirpassword" type="password" name="Confirpassword" placeholder="Confirme sua senha " ><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                  <div class="gender-input">
@@ -115,25 +117,25 @@
                 <!--essa div """gender-group""" agrupa todos os outro inputs -->
                   <div class="gender-group">
                       <div class="gender-input">
-                        <input type="radio" id="female" name="gender">
+                        <input type="radio" id="female" name="gender" >
                         <label for="female">Feminino</label>
                       </div>
                     </div>
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
+                            <input type="radio" id="male" name="gender" >
                             <label for="male">Masculino</label>
                         </div>
                       </div>
                         <div class="gender-group">
                             <div class="gender-input">
-                                <input type="radio" id="others" name="gender">
+                                <input type="radio" id="others" name="gender" >
                                 <label for="others">Outros</label>
                             </div>
                           </div>
                             <div class="gender-group">
                                 <div class="gender-input">
-                                    <input type="radio" id="none" name="gender">
+                                    <input type="radio" id="none" name="gender" >
                                     <label for="none">Prefiro não dizer</label>
                                 </div>
                             </div>
@@ -168,28 +170,46 @@
                         <button type="reset"><a href="#">leia os termos</a></button>
                        </div> 
                       
-                       <div class="modal">
+                       <div class="modal" >
                         
                          <div onclick="fechar()" class="fechar" ><img src="css-style-JS/img/botao-x.png" alt="fechar" width="30" height="30"></div>
-                         <span><h1>Termos de uso</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aliquam tempore pariatur deleniti! In, velit cupiditate eligendi minima aspernatur aliquid dolores harum officia ut nobis quidem earum et iure voluptatem?</p>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequatur debitis sequi possimus! Reiciendis quas natus maiores consequatur, eaque nemo dicta eos. Facilis beatae harum nihil officia odio corrupti cupiditate.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur culpa, tenetur mollitia ab nobis commodi corrupti quisquam iusto incidunt id quidem sapiente soluta officiis. Recusandae impedit odio molestias laudantium accusantium?</p></span>
-                         
+                         <span><h1><br>_______________Termos de uso________________</h1><p><br><br>Uma política de privacidade é uma declaração ou documento legal (na lei de privacidade ) que divulga algumas ou todas as maneiras pelas quais uma parte coleta,</p>
+                          <p> usa, divulga e gerencia os dados de um cliente ou cliente. [1] As informações pessoais podem ser qualquer coisa que possa ser usada para identificar um indivíduo,</p>
+                          <p> não se limitando ao nome da pessoa, endereço, data de nascimento, estado civil, informações de contato, emissão de identidade e data de validade , registros financeiros,</p>
+                          <p> informações de crédito, história, por onde se viaja e intenções de adquirir bens e serviços. [2]No caso de uma empresa, geralmente é uma declaração que declara a política de uma </p>
+                          <p> parte sobre como ela coleta, armazena e divulga as informações pessoais que coleta. Ele informa ao cliente quais informações específicas são coletadas e se são mantidas em sigilo,</p>
+                          <p> compartilhadas com parceiros ou vendidas a outras empresas ou empreendimentos. [3] [4] As políticas de privacidade geralmente representam um tratamento mais amplo e generalizado,
+                           em oposição às declarações de uso de dados, que tendem a ser mais detalhadas e específicas.<br>
+                           <p>O conteúdo exato de uma determinada política de privacidade dependerá da lei aplicável e pode precisar atender a requisitos além das fronteiras geográficas e jurisdições legais.</p>
+                           <p> A maioria dos países possui legislação e diretrizes próprias sobre quem está coberto, quais informações podem ser coletadas e para que podem ser usadas. Em geral,</p>
+                           <p> as leis de proteção de dados na Europa abrangem o setor privado, bem como o setor público. Suas leis de privacidade se aplicam não apenas a operações governamentais,</p>
+                           <p> mas também a empresas privadas e transações comerciais. [5]<br>
+                          <p>O Código de Negócios e Profissões da Califórnia, Requisitos de Privacidade na Internet (CalOPPA) determinam que os sites que coletam Informações de Identificação Pessoal (PII)</p>
+                          <p> de residentes da Califórnia devem publicar sua política de privacidade de forma visível.</p>
                        </div>
-               
+                       <div class="gender-groupo">
+                        <div class="gender-inputo">
+                          <input type="radio" id="aceite" name="gendero" >
+                          <label for="aceite">Eu li e concordo com os termos de uso</label>
+                        </div>
+                      </div>
                      <div class="continue-button">
-                      <button type="reset"><a href="#">Continuar</a></button>
+                      <button type="submit" id="button"><a href="#">Continuar</a></button>
+
                     </div> 
-               
-                     
+
             </form>
             
             </div>
          </div>
          
+        </div>
+        
     </div>
  <script type="text/javascript" src="cep.js"></script> 
  <script type="text/javascript" src="main.js"></script> 
+
+ 
 </body>
 </html>
 
