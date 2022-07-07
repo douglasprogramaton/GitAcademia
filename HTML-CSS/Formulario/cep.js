@@ -1,3 +1,6 @@
+
+    
+    
     //faz a requisição da URL que recebe as informações via Json e vai jogar cara informção dentro do seu respequitivo campo 
     // da pagina de cadastro
     function buscarCep(){
@@ -35,9 +38,17 @@
                 }
         }
 
-    }
-    //criando o evento que preenche o campo ao sair do campo preenchido.
-    window.onload=function(){
-        let txtCep= document.getElementById("CEP");
-        txtCep.addEventListener("blur",buscarCep);
-    }
+    
+     //criando o evento que preenche o campo ao sair do campo preenchido.
+         window.onload=function(){
+             let txtCep= document.getElementById("CEP");
+             txtCep.addEventListener("blur",buscarCep);
+         }
+        
+        }
+   
+        
+        
+       
+
+  
