@@ -36,80 +36,80 @@
                    <label for="firstname">Primeiro nome</label>
                    <!--""input esta parte esta dizendo que o input vair ser type="text "
                     por que na hora que o usuario clicar no label é diorecionado para o textbox""-->
-                   <input id="firtname" type="text" name="tfirstname" placeholder="Digite seu primeiro nome "  ><!--para tornar o campo obrigatorio-->
+                   <input id="firtname" type="text" name="tfirstname" placeholder="Digite seu primeiro nome " required ><!--para tornar o campo obrigatorio-->
                    
                    
                  </div>
                
                  <div class="input-box">                  
                    <label for="lastname">Sobrenome</label>
-                   <input id="lastname" type="text"  name="tLastname" placeholder="Digite seu primeiro sobrenome " ><!--para tornar o campo obrigatorio-->
+                   <input id="lastname" type="text" pattern="^[A-Za-z]+$" name="tLastname" placeholder="Digite seu primeiro sobrenome " required ><!--para tornar o campo obrigatorio-->
                    
                  </div>
                  
                  <div class="input-box">
                    <label for="email">Email</label>
-                   <input id="email" type="text" name="temail" placeholder="Digite seu email " ><!--para tornar o campo obrigatorio-->
+                   <input id="email" type="text" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" name="temail" placeholder="Digite seu email " required><!--para tornar o campo obrigatorio-->
                  </div>
                  <div class="input-box">
                    <label for="login">Login</label>
-                   <input id="login" type="text" name="tlogin" placeholder="Este é seu login " ><!--para tornar o campo obrigatorio-->
+                   <input id="login" type="text" name="tlogin" placeholder="Este é seu login " required><!--para tornar o campo obrigatorio-->
                  </div>
 
                  <div class="input-box">
                     <label for="GitHub">Perfil do GitHub</label>
-                    <input id="GitHub" type="text" name="tGitHub" placeholder="Perfil do GitHub " ><!--para tornar o campo obrigatorio-->
+                    <input id="GitHub" type="text" name="tGitHub" placeholder="Perfil do GitHub " required><!--para tornar o campo obrigatorio-->
                   </div>
 
                  <div class="input-box">
                    <label for="number">Celular</label>
-                   <input id="number" type="text" name="tnumber" placeholder="(xx)xxxxx-xxxx" >  <!--para tornar o campo obrigatorio--> 
+                   <input id="number" type="text" name="tnumber" placeholder="(xx)xxxxx-xxxx" required>  <!--para tornar o campo obrigatorio--> 
                  </div>
 
                  <div class="input-box">   
-                    <label for="CEP">CEP</label>
-                      <input id="CEP" type="text" name="tCEP" placeholder="Digite seu cep " ><!--para tornar o campo obrigatorio-->
+                    <label for="cep">CEP</label>
+                      <input id="cep" type="text" name="cep" placeholder="Digite seu cep " required><!--para tornar o campo obrigatorio-->
                 </div> 
 
                   <div class="input-box">   
                     <label for="address">Endereço</label> 
-                    <input id="address" type="text" name="taddress" placeholder="Digite seu Endereço " ><!--para tornar o campo obrigatorio-->
+                    <input id="address" type="text" name="taddress" placeholder="Digite seu Endereço " required><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="ncasa">Numero da casa</label> 
-                    <input id="ncasa" type="text" name="tn-casa" placeholder="Numero da casa " ><!--para tornar o campo obrigatorio-->
+                    <input id="ncasa" type="text" name="tn-casa" placeholder="Numero da casa " required><!--para tornar o campo obrigatorio-->
                   </div> 
 
                   <div class="input-box">   
                     <label for="complement">Complemento</label>
-                    <input id="complement" type="text" name="tcomplement" placeholder="Complemento " ><!--para tornar o campo obrigatorio-->
+                    <input id="complement" type="text" name="tcomplement" placeholder="Complemento " required><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="district">Bairro</label>
-                    <input id="district" type="text" name="tdistrict" placeholder="Bairro" ><!--para tornar o campo obrigatorio-->
+                    <input id="district" type="text" name="tdistrict" placeholder="Bairro" required><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="City">Cidade</label>
-                    <input id="City" type="text" name="tCity" placeholder="Cidade " ><!--para tornar o campo obrigatorio-->
+                    <input id="City" type="text" name="tCity" placeholder="Cidade " required><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                   <div class="input-box">   
                     <label for="state">Estado</label>
-                    <input id="state" type="text" name="tstate" placeholder="Estado " ><!--para tornar o campo obrigatorio-->
+                    <input id="state" type="text" name="tstate" placeholder="Estado " required><!--para tornar o campo obrigatorio-->
                   </div> 
 
                  <div class="input-box">   
                    <label for="password">Senha</label>
-                   <input id="password" type="password" name="tpassword" placeholder="Digite sua senha " ><!--para tornar o campo obrigatorio-->
+                   <input id="password" type="password" name="tpassword" placeholder="Digite sua senha " required><!--para tornar o campo obrigatorio-->
                  </div> 
 
                  <div class="input-box">   
                     <label for="Confirpassword">Confirme sua senha</label>
   
-                    <input id="Confirpassword" type="password" name="tConfirpassword" placeholder="Confirme sua senha " ><!--para tornar o campo obrigatorio-->
+                    <input id="Confirpassword" type="password" name="tConfirpassword" placeholder="Confirme sua senha " required><!--para tornar o campo obrigatorio-->
                   </div> 
                   
                  <div class="gender-input">
@@ -120,7 +120,7 @@
                 <!--essa div """gender-group""" agrupa todos os outro inputs -->
                   <div class="gender-group">
                       <div class="gender-input">
-                        <input type="radio" id="female" name="gender" >
+                        <input type="radio" id="female" name="gender" > 
                         <label for="female">Feminino</label>
                       </div>
                     </div>
@@ -222,6 +222,7 @@
     <caption>Tabela de Dados</caption>
     <thead>
       <tr>
+        
         <td>Código</td>
         <td>Nome</td>
         <td>Sobrenome</td>
@@ -237,8 +238,7 @@
         <td>Cidade</td>
         <td>Estado</td>
         <td>Senha</td>
-        
-        
+      
       </tr>
     </thead>
   </table>

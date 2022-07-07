@@ -5,7 +5,7 @@
     // da pagina de cadastro
     function buscarCep(){
         //para pegar a irnformação do CEP digitado dentro do campo de preechimento
-        let cep = document.getElementById('CEP').value;
+        let cep = document.getElementById('cep').value;
         //condição para executar somente se o usuario tiver saido
         if(cep!==""){
             let url="https://brasilapi.com.br/api/cep/v1/"+cep;
@@ -41,7 +41,7 @@
     
      //criando o evento que preenche o campo ao sair do campo preenchido.
          window.onload=function(){
-             let txtCep= document.getElementById("CEP");
+             let txtCep= document.getElementById("cep");
              txtCep.addEventListener("blur",buscarCep);
          }
         

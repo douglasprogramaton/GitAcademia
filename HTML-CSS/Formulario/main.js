@@ -49,7 +49,7 @@ function cadPessoa(){
          cellLogin.innerHTML=document.getElementById('login').value;
          cellGitHub.innerHTML=document.getElementById('GitHub').value;
          cellNumber.innerHTML=document.getElementById('number').value;
-         cellCep.innerHTML=document.getElementById('CEP').value;
+         cellCep.innerHTML=document.getElementById('cep').value;
          cellAddress.innerHTML=document.getElementById('address').value;
          cellNcasa.innerHTML=document.getElementById('ncasa').value;
          cellComplement.innerHTML=document.getElementById('complement').value;
@@ -126,9 +126,9 @@ function cadPessoa(){
             return false;
            }
           
-           if (document.getElementById('CEP').value==''){
+           if (document.getElementById('cep').value==''){
             alert('Preencha os campos') ;
-            document.getElementById('CEP').focus()
+            document.getElementById('cep').focus()
             return false;
            }
            
